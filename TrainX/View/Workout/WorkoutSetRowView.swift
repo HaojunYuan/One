@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct WorkoutSetRowView: View {
-    @Binding var set: Set
+    @Binding var set: WorkoutSet
     var unit: Unit
-    var deleteSet: (Set) -> Void
+    var deleteSet: (WorkoutSet) -> Void
     
     var body: some View {
         HStack(alignment: .center) {
@@ -27,5 +27,5 @@ struct WorkoutSetRowView: View {
 
 
 #Preview {
-    WorkoutSetRowView(set: .constant(Set(weight: 45, repetitions: 8)), unit:.lb, deleteSet: {_ in })
+    WorkoutSetRowView(set: .constant(WorkoutSet(weight: 45, repetitions: 8)), unit:.lb, deleteSet: {_ in })
 }

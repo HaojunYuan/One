@@ -29,11 +29,11 @@ struct Workout: Codable, Hashable {
     var id = UUID()
     var name: String
     var workoutType: WorkoutType
-    var sets: [Set] = []
+    var sets: [WorkoutSet] = []
     var unit: Unit
 }
 
-struct Set: Codable, Hashable {
+struct WorkoutSet: Codable, Hashable {
     var id = UUID()
     var weight: Int?
     var repetitions: Int?

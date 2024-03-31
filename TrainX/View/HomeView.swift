@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var viewModel: AuthViewModel
+    @StateObject var healthViewModel = HealthViewModel()
+
     var body: some View {
         TabView {
             WorkoutPlansView()
@@ -17,9 +19,11 @@ struct HomeView: View {
                     Label("Workouts", systemImage: "list.bullet.rectangle")
                 }
 
-            HistoryView()
+            HealthView()
+                .environmentObject(viewModel)
+                .environmentObject(healthViewModel)
                 .tabItem {
-                    Label("History", systemImage: "calendar")
+                    Label("Health", systemImage: "heart")
                 }
 
             ChatView()
@@ -29,7 +33,7 @@ struct HomeView: View {
             
             FeedView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Label("Community", systemImage: "person.2")
                 }
 
             ProfileView()

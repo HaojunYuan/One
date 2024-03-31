@@ -79,6 +79,10 @@
 		EB8B64FC2BA646E600A1F067 /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64FB2BA646E600A1F067 /* PostRowViewModel.swift */; };
 		EB8B64FE2BA648DC00A1F067 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64FD2BA648DC00A1F067 /* UserService.swift */; };
 		EB8B65042BA652BB00A1F067 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B65032BA652BB00A1F067 /* TextArea.swift */; };
+		EB8B65072BBA086E00A1F067 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B65062BBA086E00A1F067 /* HealthView.swift */; };
+		EB8B65092BBA08D600A1F067 /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B65082BBA08D600A1F067 /* ActivityCard.swift */; };
+		EB8B650B2BBA0B6F00A1F067 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */; };
+		EBBDD9002BBA1FFC007E6EB4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBDD8FF2BBA1FFC007E6EB4 /* Activity.swift */; };
 		EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */; };
 		EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */; };
 		EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */; };
@@ -129,6 +133,11 @@
 		EB8B64FB2BA646E600A1F067 /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		EB8B64FD2BA648DC00A1F067 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		EB8B65032BA652BB00A1F067 /* TextArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		EB8B65062BBA086E00A1F067 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		EB8B65082BBA08D600A1F067 /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		EB8B650C2BBA111E00A1F067 /* TrainX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainX.entitlements; sourceTree = "<group>"; };
+		EBBDD8FF2BBA1FFC007E6EB4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorkoutPlanView.swift; sourceTree = "<group>"; };
 		EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanDetailView.swift; sourceTree = "<group>"; };
@@ -223,6 +232,7 @@
 		EB7AF5972B6ECA3F007CDFE6 /* TrainX */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B650C2BBA111E00A1F067 /* TrainX.entitlements */,
 				EB8B64DE2B9E519900A1F067 /* Swift.gitignore */,
 				EB8B64CF2B9E334200A1F067 /* Constants.swift */,
 				EB7AF5982B6ECA3F007CDFE6 /* TrainXApp.swift */,
@@ -248,6 +258,7 @@
 		EB7AF5A62B7ACC19007CDFE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B65052BBA085700A1F067 /* Health */,
 				EB8B64F42BA6462C00A1F067 /* Feed */,
 				EB8B64EA2BA6391E00A1F067 /* Post */,
 				EB8B64CE2B9E32BE00A1F067 /* ChatGPT */,
@@ -279,6 +290,7 @@
 				EB6536BB2B83F24C0084A227 /* Workout.swift */,
 				EB8B64E62BA637AC00A1F067 /* Post.swift */,
 				EB8B64EE2BA63C0B00A1F067 /* UploadPostViewModel.swift */,
+				EBBDD8FF2BBA1FFC007E6EB4 /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +334,16 @@
 				EB8B64F72BA6465100A1F067 /* FeedView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		EB8B65052BBA085700A1F067 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */,
+				EB8B65062BBA086E00A1F067 /* HealthView.swift */,
+				EB8B65082BBA08D600A1F067 /* ActivityCard.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +462,7 @@
 				EB7334302B819941005798BA /* HomeView.swift in Sources */,
 				EB8B64FA2BA646CB00A1F067 /* PostRowView.swift in Sources */,
 				EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */,
+				EB8B65092BBA08D600A1F067 /* ActivityCard.swift in Sources */,
 				EB6536CE2B8569140084A227 /* WorkoutRowView.swift in Sources */,
 				EB7AF5AC2B7ACCFD007CDFE6 /* ChatView.swift in Sources */,
 				EB6536C42B8444B90084A227 /* ButtonView.swift in Sources */,
@@ -447,6 +470,8 @@
 				EB8B65042BA652BB00A1F067 /* TextArea.swift in Sources */,
 				EB6536BC2B83F24C0084A227 /* Workout.swift in Sources */,
 				EB8B64D22B9E33F000A1F067 /* ChatViewModel.swift in Sources */,
+				EBBDD9002BBA1FFC007E6EB4 /* Activity.swift in Sources */,
+				EB8B650B2BBA0B6F00A1F067 /* HealthViewModel.swift in Sources */,
 				EB8B64FE2BA648DC00A1F067 /* UserService.swift in Sources */,
 				EB8B64EF2BA63C0B00A1F067 /* UploadPostViewModel.swift in Sources */,
 				EB6536D02B8691C10084A227 /* WorkoutPlanGridItemView.swift in Sources */,
@@ -463,6 +488,7 @@
 				EB8B64E72BA637AC00A1F067 /* Post.swift in Sources */,
 				EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */,
 				EB7334242B8019DB005798BA /* ProfileView.swift in Sources */,
+				EB8B65072BBA086E00A1F067 /* HealthView.swift in Sources */,
 				EB8B64E52BA6379500A1F067 /* NewPostView.swift in Sources */,
 				EB73342E2B818E22005798BA /* LoginView.swift in Sources */,
 				EB6536C22B843FAC0084A227 /* WorkoutSetRowView.swift in Sources */,
@@ -604,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrainX/TrainX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrainX/Preview Content\"";
@@ -611,6 +638,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainX/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy app features";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,6 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TrainX/TrainX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrainX/Preview Content\"";
@@ -641,6 +670,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainX/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy app features";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

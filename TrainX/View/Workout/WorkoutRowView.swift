@@ -31,7 +31,7 @@ struct WorkoutRowView: View {
                     }
                 }
                 Button("Add new set") {
-                    workout.sets.append(Set())
+                    workout.sets.append(WorkoutSet())
                 }
                 .padding(.bottom, 12)
             }
@@ -46,7 +46,7 @@ struct WorkoutRowView: View {
         .padding(.horizontal)
     }
     
-    private func deleteSet(set: Set) {
+    private func deleteSet(set: WorkoutSet) {
         if let index = workout.sets.firstIndex(where: { $0.id == set.id }) {
             workout.sets.remove(at: index)
         }
@@ -54,5 +54,5 @@ struct WorkoutRowView: View {
 }
 
 #Preview {
-    WorkoutRowView(workout: .constant(Workout(name: "Bench Press", workoutType: .chest, sets: [Set(weight: 45, repetitions: 12)], unit: .lb)), expanded: false)
+    WorkoutRowView(workout: .constant(Workout(name: "Bench Press", workoutType: .chest, sets: [WorkoutSet(weight: 45, repetitions: 12)], unit: .lb)), expanded: false)
 }
