@@ -34,14 +34,11 @@ struct ActivityCard: View {
                 
                 Text(activity.amount)
                     .font(.system(size: 24))
+                    .minimumScaleFactor(0.6)
+                    .bold()
+                    .padding(.bottom)
             }
             .padding()
         }
     }
-}
-
-#Preview {
-    ActivityCard(
-        activity: Activity(id: 0, title: "Daily Steps", subtitle: "Goal: 10000", image: "figure.walk", amount: "6000")
-    )
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Activity {
-    let id: Int
+    let id: UUID
     let title: String
     let subtitle: String
     let image: String

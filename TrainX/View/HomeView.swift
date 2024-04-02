@@ -20,7 +20,6 @@ struct HomeView: View {
                 }
 
             HealthView()
-                .environmentObject(viewModel)
                 .environmentObject(healthViewModel)
                 .tabItem {
                     Label("Health", systemImage: "heart")

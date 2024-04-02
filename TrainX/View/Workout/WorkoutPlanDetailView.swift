@@ -14,13 +14,7 @@ struct WorkoutPlanDetailView: View {
     let workoutPlan: WorkoutPlan
     
     var body: some View {
-        VStack {
-//            // Display workout details
-//            Text(workoutPlan.name)
-//                .font(.title)
-//                .padding()
-            
-            // Display sets with checkboxes
+        VStack(alignment: .leading) {
             ForEach(workoutPlan.workouts, id: \.id) { workout in
                 VStack(alignment: .leading) {
                     Text(workout.name)
@@ -30,31 +24,29 @@ struct WorkoutPlanDetailView: View {
                     ForEach(workout.sets, id: \.id) { set in
                         HStack {
                             Checkbox()
-                            Text("\(set.weight ?? 0)")
-                            Text("\(workout.unit.rawValue)")
-                            Text("\(set.repetitions ?? 0)")
+                            Text("\(set.weight ?? 0) \(workout.unit.rawValue) * \(set.repetitions ?? 0) reps")
                             Spacer()
-                            
                         }
-                        .padding(.horizontal)
                     }
+                    
                 }
+                .padding(.bottom)
             }
-            
             Spacer()
-            
-            // End workout button
-            Button("End Workout") {
-                endWorkoutAlert = true
-            }
-            .padding()
-            .alert(isPresented: $endWorkoutAlert) {
-                Alert(title: Text("End Workout?"), message: Text("Are you sure you want to end the workout?"), primaryButton: .cancel(), secondaryButton: .default(Text("End")) {
-                    // Clear all checked boxes
-                    checkedSets = Array(repeating: false, count: checkedSets.count)
-                })
-            }
+            //
+            //            // End workout button
+            //            Button("End Workout") {
+            //                endWorkoutAlert = true
+            //            }
+            //            .padding()
+            //            .alert(isPresented: $endWorkoutAlert) {
+            //                Alert(title: Text("End Workout?"), message: Text("Are you sure you want to end the workout?"), primaryButton: .cancel(), secondaryButton: .default(Text("End")) {
+            //                    // Clear all checked boxes
+            //                    checkedSets = Array(repeating: false, count: checkedSets.count)
+            //                })
+            //            }
         }
+        .padding()
         .navigationBarTitle(Text(workoutPlan.name), displayMode: .inline)
     }
 }

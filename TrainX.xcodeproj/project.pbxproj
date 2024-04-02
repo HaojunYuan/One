@@ -83,6 +83,7 @@
 		EB8B65092BBA08D600A1F067 /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B65082BBA08D600A1F067 /* ActivityCard.swift */; };
 		EB8B650B2BBA0B6F00A1F067 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */; };
 		EBBDD9002BBA1FFC007E6EB4 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBDD8FF2BBA1FFC007E6EB4 /* Activity.swift */; };
+		EBBDD9032BBCAE10007E6EB4 /* HealthExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBDD9022BBCAE10007E6EB4 /* HealthExtensions.swift */; };
 		EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */; };
 		EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */; };
 		EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */; };
@@ -138,6 +139,7 @@
 		EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
 		EB8B650C2BBA111E00A1F067 /* TrainX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrainX.entitlements; sourceTree = "<group>"; };
 		EBBDD8FF2BBA1FFC007E6EB4 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		EBBDD9022BBCAE10007E6EB4 /* HealthExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthExtensions.swift; sourceTree = "<group>"; };
 		EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorkoutPlanView.swift; sourceTree = "<group>"; };
 		EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanDetailView.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 				EB8B650A2BBA0B6F00A1F067 /* HealthViewModel.swift */,
 				EB8B65062BBA086E00A1F067 /* HealthView.swift */,
 				EB8B65082BBA08D600A1F067 /* ActivityCard.swift */,
+				EBBDD9022BBCAE10007E6EB4 /* HealthExtensions.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				EB7334242B8019DB005798BA /* ProfileView.swift in Sources */,
 				EB8B65072BBA086E00A1F067 /* HealthView.swift in Sources */,
 				EB8B64E52BA6379500A1F067 /* NewPostView.swift in Sources */,
+				EBBDD9032BBCAE10007E6EB4 /* HealthExtensions.swift in Sources */,
 				EB73342E2B818E22005798BA /* LoginView.swift in Sources */,
 				EB6536C22B843FAC0084A227 /* WorkoutSetRowView.swift in Sources */,
 				EB7334282B8162BA005798BA /* SettingsRowView.swift in Sources */,

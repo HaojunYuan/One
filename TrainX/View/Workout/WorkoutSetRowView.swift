@@ -16,6 +16,7 @@ struct WorkoutSetRowView: View {
         HStack(alignment: .center) {
             WorkoutSetInputView(value: $set.weight, title: "Weight")
             Text(unit.rawValue)
+                .padding(.top)
             WorkoutSetInputView(value: $set.repetitions, title: "Repetitions")
             Button(action: { deleteSet(set) }) {
                 Image(systemName: "trash")
