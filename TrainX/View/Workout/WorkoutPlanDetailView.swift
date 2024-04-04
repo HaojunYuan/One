@@ -14,7 +14,7 @@ struct WorkoutPlanDetailView: View {
     let workoutPlan: WorkoutPlan
     
     var body: some View {
-        VStack(alignment: .leading) {
+        ScrollView {
             ForEach(workoutPlan.workouts, id: \.id) { workout in
                 VStack(alignment: .leading) {
                     Text(workout.name)
@@ -28,7 +28,6 @@ struct WorkoutPlanDetailView: View {
                             Spacer()
                         }
                     }
-                    
                 }
                 .padding(.bottom)
             }
