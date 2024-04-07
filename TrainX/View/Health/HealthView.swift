@@ -24,7 +24,6 @@ struct HealthView: View {
             .padding(.horizontal)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        
     }
 }
 

@@ -47,11 +47,11 @@ struct MessageBubble: View {
         Text(message.content)
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
-            .background(message.role == .user ? Color.green : Color.gray.opacity(0.2))
+            .background(message.role == .user ? Color.green : Color.teal)
             .cornerRadius(10.0)
     }
 }
 
 #Preview {
-    MessageView(message: Message(id: UUID(), role: .user, content: "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello", createAt: Date()))
+    MessageView(message: Message(id: UUID(), role: .assistant, content: "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello", createAt: Date()))
 }
